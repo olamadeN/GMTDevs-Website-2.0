@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./component/navbar/page";
-import { MoveRight } from "lucide-react";
+import { CircleChevronRight, MoveRight } from "lucide-react";
 import MockupCarousel from "./component/headerSlider/page";
 import LaptopCarousel from "./component/headerSlider/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -71,6 +72,75 @@ export default function Home() {
                 </p>
                 <br />
                 <div className='btn'>Learn more <MoveRight size={20} /></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.section2}>
+          <div className='container'>         
+            <div className={styles.section2Header}>
+              <div>
+                <h5>GMTDevs</h5>
+                <h2>Curious About Our Work?</h2>
+              </div>
+              <div className="btnPills">See more <MoveRight size={20} /></div>
+            </div>
+            <div className={styles.section2CardCont}>
+              <div className={styles.section2Card}>
+                <Link href="https://www.edvaltour.com/" target='__blank'>
+                  <img src='/images/tours.png' alt="edvaltours" />
+                  <div className={styles.section2CardOverlay}>
+                    <div className={`container ${styles.overlayTxt}`}>
+                      <div>
+                        <p>EdvalTours Website Project</p>
+                        <p>2025</p>
+                      </div>
+                      <CircleChevronRight size={28}/>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className={styles.section2Card}>
+                <Link href="https://edvalbiograhpy.com/" target='__blank'>
+                  <img src='/images/ebiography.png' alt="edval biography" />
+                  <div className={styles.section2CardOverlay}>
+                    <div className={`container ${styles.overlayTxt}`}>
+                      <div>
+                        <p>Edval Biography Website Project</p>
+                        <p>2026</p>
+                      </div>
+                      <CircleChevronRight size={28}/>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className={styles.section2Card}>
+                <Link href="https://www.edvaltour.com/" target='__blank'>
+                  <img src='/images/auction.png' alt="edval art auction" />
+                  <div className={styles.section2CardOverlay}>
+                    <div className={`container ${styles.overlayTxt}`}>
+                      <div>
+                        <p>Edval Art Auction Website Project</p>
+                        <p>2026</p>
+                      </div>
+                      <CircleChevronRight size={28}/>
+                    </div>
+                  </div>
+                </Link>  
+              </div>
+              <div className={styles.section2Card}>
+                <Link href="https://www.eevents.event/" target='__blank'>
+                  <img src='/images/eevents.jpg' alt="eevents" />
+                  <div className={styles.section2CardOverlay}>
+                    <div className={`container ${styles.overlayTxt}`}>
+                      <div>
+                        <p>E-events Website Project</p>
+                        <p>2025</p>
+                      </div>
+                      <CircleChevronRight size={28}/>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

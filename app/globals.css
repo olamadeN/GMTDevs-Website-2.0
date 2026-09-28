@@ -67,6 +67,13 @@ h4{
   font-weight: 800;
   font-size: 20px;
 }
+h5{
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 59%;
+  color: var(--text-gold-dark) ;
+}
 p{
   font-family: var(--font-body);
   font-weight: 500;
@@ -107,6 +114,8 @@ p{
   color: var(--text-primary);
   padding: 10px 24px;
   border-radius: 24px;
+  height: fit-content;
+  width:fit-content;
 }
 .underline{
   width: 42px;
