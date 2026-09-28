@@ -1,0 +1,28 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 165px;
+    height: 59px;
+}
+.navLinks{
+    list-style: none;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    gap:16px;
+    background: #FFFFFF;
+    padding: 8px;
+    border-radius: 32px;
+}
+.navLinks li{
+    list-style: none;
+    padding: 10px 16px 10px 16px;
+}
+.active{
+    background-color: var(--text-gold-dark);
+    border-radius: 32px;
+}

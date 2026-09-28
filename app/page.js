@@ -1,68 +1,80 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Navbar from "./component/navbar/page";
+import { MoveRight } from "lucide-react";
+import MockupCarousel from "./component/headerSlider/page";
+import LaptopCarousel from "./component/headerSlider/page";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <header className={styles.header}>
+        <div className="navbarContainer">
+          <Navbar />
+        </div>
+        <div className={styles.heroContent}>
+          <h1>Your <span style={{color:'#CB8731'}}>website</span>  is your business’ first impression.</h1>
+          <p>Your business is unique. Your software should be too. We develop and implement solutions that simplify daily operations and support business growth every step of the way.</p>
+          <div className={styles.btnPack}>
+            <div className='btnPills'> Get in touch with us </div>
+            <div className='btn'>Explore projects <MoveRight size={20} /></div>
+          </div>
+        </div>
+        <div className={styles.heroContent2}>     
+          <div className={`container ${styles.blankWhite}`}>
+          </div>     
+          <div className={`container ${styles.carouselContainer}`}>
+            <LaptopCarousel className={styles.carousel} />
+          </div>          
+        </div>
+      </header>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <section className={styles.section1}>
+          <div className={styles.aboutUsCont}>
+            <div className={styles.left}>
+              <h3>About us.</h3>
+              <div className='underline'></div>
+            </div>
+            <div className={styles.right}>
+              <div className={styles.right1}>
+                <p>At GMTDevs, we create clean, effective websites tailored to businesses and personal brands. Our designs focus on functionality, user experience, and your unique goals, making sure your website is not just beautiful but also working.
+                  We are not just developers; we are your partners in taking your brand online
+                  and helping you thrive in the digital world.
+                </p>
+                <div className='btn'>Learn more <MoveRight size={20} /></div>
+              </div>
+              <div className={styles.right2}>
+                <img src='/images/plane.png'/>
+              </div>
+            </div>
+          </div>
+          <div className={`container ${styles.ourServices}`}>
+            <div className={styles.serviceLeft}>
+              <h3>Our <br/> Services</h3>
+              <div className='underline'></div>
+            </div>
+            <div className={styles.ServiceRight}>
+              <div className={styles.cardCont}>
+                <img src="/images/designService.png" alt="Design Service" />
+                <h4>Design services</h4>
+                <p>
+                  We design and develop powerful, scalable applications tailored to your business needs. Our solutions are readily and directly built for security, functionality, performance and reliability, helping your business turn novel ideas into dependable digital products. 
+                </p>
+                <br />
+                <div className='btn'>Learn more <MoveRight size={20} /></div>
+              </div>
+              <div className={styles.cardCont}>
+                <img src="/images/devService.png" alt="Development Service" />
+                <h4>Development services</h4>
+                <p>
+                  We develop tailored software solutions that address your unique business requirements and workflows. Our applications are designed to improve efficiency, automate processes, and provide scalable solutions that grow with your organization.
+                </p>
+                <br />
+                <div className='btn'>Learn more <MoveRight size={20} /></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
