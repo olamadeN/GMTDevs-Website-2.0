@@ -7,6 +7,7 @@ import LaptopCarousel from "./component/headerSlider/page";
 import Link from "next/link";
 import AcademySection from "./component/academySection/academy";
 import Testimonials from "./component/testimonialSection/testimonial";
+import Footer from "./component/footer/footer";
 
 export default function Home() {
   return (
