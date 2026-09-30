@@ -58,8 +58,9 @@
 }
 
 .section1{
-  height: 955px;
+  height: auto;
   background: #FFFFFF;
+  padding-bottom: 111px;
 }
 .aboutUsCont{
   width: 100%;
@@ -138,9 +139,10 @@
 
 
 .section2{
-  height: 1171px;
+  height: auto;
   background:#F4EEE5;
   padding-top: 71px;
+  padding-bottom: 100px;
 }
 .section2Header{
   display: flex;
@@ -197,4 +199,12 @@
   opacity: 100%;
   transition: ease-in;
   transition-duration: 500ms;
+}
+
+
+
+/* Testimonials */
+.section4{
+  width: 100%;
+  padding: 80px 0;
 }

@@ -102,6 +102,7 @@ p{
   align-items: center;
   color: var(--text-secondary);
   padding: 10px 24px;
+  width:fit-content;
   padding-left: 0;
 }
 .btnPills{

@@ -5,6 +5,8 @@ import { CircleChevronRight, MoveRight } from "lucide-react";
 import MockupCarousel from "./component/headerSlider/page";
 import LaptopCarousel from "./component/headerSlider/page";
 import Link from "next/link";
+import AcademySection from "./component/academySection/academy";
+import Testimonials from "./component/testimonialSection/testimonial";
 
 export default function Home() {
   return (
@@ -76,6 +78,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section className={styles.section2}>
           <div className='container'>         
             <div className={styles.section2Header}>
@@ -143,6 +146,16 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className={styles.section3}>
+          <AcademySection />
+        </section>
+
+        <section className={styles.section4}>
+          <div className="container">
+            <Testimonials />
           </div>
         </section>
       </main>

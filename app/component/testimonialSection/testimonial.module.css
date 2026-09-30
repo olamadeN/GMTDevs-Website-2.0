@@ -1,0 +1,201 @@
+.testimonials {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* --------------------------------
+   LEFT SIDE
+-------------------------------- */
+
+.intro {
+  position: relative;
+/*   min-height: 290px; */
+    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.introTxtBox{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.intro p {
+  font-size: 20px;
+}
+
+.intro p strong {
+  font-weight: 800;
+}
+
+/* --------------------------------
+   CONTROLS
+-------------------------------- */
+
+.controls {
+  display: flex;
+  gap: 10px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.controls button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  font-family: Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    transform 0.55s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.controls button span {
+  display: block;
+  margin-top: -3px;
+}
+
+.btn {
+  border: 1px solid var(--text-secondary);
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+}
+
+.btn:hover {
+  background: var(--text-secondary);
+  color: #fff;
+}
+
+
+/* --------------------------------
+   CARD
+-------------------------------- */
+
+.cardWrapper {
+  min-width: 0;
+  overflow: hidden;
+  height: 256px;
+  box-shadow: 4px 23px 24px 0px #B0B0B017, 1px 6px 13px 0px #B0B0B00D, 10px 53px 32px 0px #B0B0B00D, 18px 94px 38px 0px #B0B0B003, 28px 147px 42px 0px #B0B0B000;
+}
+
+.card {
+    height: 100%;
+    padding: 32px 50px 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 12px;
+}
+
+/* --------------------------------
+   STARS
+-------------------------------- */
+
+.stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 14px;
+    color: #f3b52f;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.stars span {
+  display: inline-block;
+}
+
+
+/* --------------------------------
+   CARD ANIMATION
+-------------------------------- */
+
+.slideNext {
+  animation: slideFromRight 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slidePrevious {
+  animation: slideFromLeft 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(28px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-28px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* --------------------------------
+   TABLET
+-------------------------------- */
+
+@media (max-width: 800px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .intro {
+    min-height: auto;
+  }
+
+  .controls {
+    position: static;
+    margin-top: 25px;
+  }
+
+  .card {
+    min-height: 210px;
+  }
+}
+
+/* --------------------------------
+   MOBILE
+-------------------------------- */
+
+@media (max-width: 500px) {
+
+  .card {
+    padding: 22px;
+    min-height: 230px;
+  }
+
+}
