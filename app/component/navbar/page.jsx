@@ -9,7 +9,7 @@ const Navbar = () => {
             <img style={{ cursor: 'pointer' }} onClick={() => window.location.href = '/'} src="/images/logo.png" alt="Logo" className={styles.logo} />
             <ul className={styles.navLinks}>
                 <li className={ pathname==='/' ? `${styles.active}`: "" }><a href="/">Home</a></li>
-                <li className={ pathname==='/about' ? `${styles.active}`: "" }><a href="/about">About Us</a></li>
+                <li className={ pathname==='/About-us' ? `${styles.active}`: "" }><a href="/About-us">About Us</a></li>
                 <li className={ pathname==='/services' ? `${styles.active}`: "" }><a href="/services">Services</a></li>
                 <li className={ pathname==='/projects' ? `${styles.active}`: "" }><a href="/projects">Projects</a></li>
                 <li className={ pathname==='/contact' ? `${styles.active}`: "" }><a href="/contact">Contact us</a></li>

@@ -1,0 +1,64 @@
+.doubleRightP{
+    width: 75%;
+}
+.aboutSection1{
+    background-color: #F4EEE5;;
+}
+.aboutSection1 .sectionLeft{
+    padding-top: 80px;       
+    padding-bottom: 180px;       
+    height: auto;
+   /*  height: 429px; */
+}
+.aboutSection1 .sectionRight{
+    display: flex;
+    height: 429px;
+
+}
+
+.darkBrown{
+    height: 429px;
+    width: 100%;
+    background-color: #CB873166;
+    position: relative;
+}
+.darkBrown img{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -60.5%);
+}
+.aboutCardCont{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 8.3%;   
+}
+.aboutCardInner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+    justify-self: flex-end;
+    margin-top: -110px;
+}
+.aboutCardInner div{
+    padding: 24px;
+    width: 455px;
+    border-radius: 12px;
+    background-color: #FEFEFE;
+    box-shadow: 1px 6px 13px 0px #B0B0B00D;
+
+}
+.aboutCardInner div p:first-child{
+    font-weight: 800;
+    font-size: 18px;
+}
+.aboutCardInner div p:last-child{
+    line-height: 24px;
+}
+.aboutCard2{
+   align-self: center;
+}
+.aboutCard3{
+   align-self: flex-end;
+}
