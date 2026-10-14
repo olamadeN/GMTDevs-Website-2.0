@@ -13,7 +13,7 @@ const AcademySection = () => {
                         <div className='underline'></div>
                     </div>
                     <div>
-                        <h1>Launch your career in tech today.</h1>
+                        <h2>Launch your career in tech today.</h2>
                         <p>Our academy is a hands-on learning space for people who want to get into tech and actually understand how things work. Learn coding, software development, and other digital skills by building projects, solving problems, and learning from people who build technology for a living.</p>   
                         
                     </div>

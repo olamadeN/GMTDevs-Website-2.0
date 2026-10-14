@@ -31,6 +31,10 @@
     flex-direction: column;
     gap: 8px;
 }
+.textPack div:nth-child(2) h2{
+    font-size: 48px;
+    line-height: 64px;
+}
 .textPack div:nth-child(2) p{
    line-height: 28px;
 }

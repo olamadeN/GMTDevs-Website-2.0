@@ -3,13 +3,14 @@
   background-color: #F4EEE5;
 }
 .heroContent{
-  max-width: 705px;
+  max-width: 54%;
   text-align: center;
   margin: 56px auto 35px auto;
   display:flex;
   flex-direction:column;
   gap: 8px;
   align-items:center;
+  border: 1px solid black;
 }
 .heroContent2{
   height: 541px;
@@ -83,6 +84,7 @@
 }
 .right1{
   padding-top: 50px;
+  padding-right: 10%;
   display: flex;
   flex-direction: column;
   gap: 16px;

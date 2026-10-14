@@ -62,3 +62,60 @@
 .aboutCard3{
    align-self: flex-end;
 }
+.aboutSection2{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.getThingHeader{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+.getThingsCardPack{
+    margin-top: 48px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+.getThingsCard{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+    height: 236px;
+}
+.cardNumber{
+    text-align: right;
+}
+.cardNumber p{
+    font-weight: 800;
+    font-size: 40px;
+    color: #EDE8E0;
+}
+.cardContent{
+    background-color: #EDE8E0;
+    height: 178px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+}
+.cardContent p{
+    line-height: 24px;
+}
+.btnPack{
+  margin-top: 48px;
+  display:flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.section4{
+  width: 100%;
+  padding: 80px 0;
+  background-color: #EDE8E0;
+}

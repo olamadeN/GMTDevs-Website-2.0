@@ -1,5 +1,8 @@
 import Navbar from '@/app/component/navbar/page';
 import styles from './about.module.css';
+import { MoveRight } from 'lucide-react';
+import AcademySection from '@/app/component/academySection/academy';
+import Testimonials from '@/app/component/testimonialSection/testimonial';
 const About = () => {
   
     return ( 
@@ -50,7 +53,64 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                
+            </section>
+            <section className={styles.aboutSection2}>
+                <div className='container'>
+                    <div className={styles.getThingHeader}>
+                        <h5>GMTDevs</h5>
+                        <h2>How we get things done</h2>
+                    </div>
+                    <div className={styles.getThingsCardPack}>
+                        <div className={styles.getThingsCard}>
+                            <div className={styles.cardNumber}>
+                                <p>01.</p>
+                            </div>
+                            <div className={styles.cardContent}>
+                                <h4>Understand</h4>
+                                <p>We begin by listening. Getting to know your brand, your audience, and what success looks like for you.</p>
+                            </div>
+                        </div>
+                        <div className={styles.getThingsCard}>
+                            <div className={styles.cardNumber}>
+                                <p>02.</p>
+                            </div>
+                            <div className={styles.cardContent}>
+                                <h4>Plan</h4>
+                                <p>Next, we define the website’s structure, features, & timeline, ensuring clear goals aligned with your specific needs</p>
+                            </div>
+                        </div>
+                        <div className={styles.getThingsCard}>
+                            <div className={styles.cardNumber}>
+                                <p>03.</p>
+                            </div>
+                            <div className={styles.cardContent}>
+                                <h4>Create</h4>
+                                <p>We craft a seamless digital experience from design to development, ensuring cross platform responsiveness.</p>
+                            </div>
+                        </div>
+                        <div className={styles.getThingsCard}>
+                            <div className={styles.cardNumber}>
+                                <p>04.</p>
+                            </div>
+                            <div className={styles.cardContent}>
+                                <h4>Support</h4>
+                                <p>Post-launch, we support your website with refinements, updates, hosting and maintenance ensuring it grows alongside your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.btnPack}>
+                        <div className='btnPills'> Get in touch with us </div>
+                        <div className='btn'>Explore projects <MoveRight size={20} /></div>
+                    </div>
+                </div>
+            </section>
+            <section className={styles.section4}>
+                <div className="container">
+                    <Testimonials />
+                </div>
+            </section>
+            <section>
+                <AcademySection />
             </section>
         </div>
     );

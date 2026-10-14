@@ -17,8 +17,8 @@ export default function Home() {
           <Navbar />
         </div>
         <div className={styles.heroContent}>
-          <h1>Your <span style={{color:'#CB8731'}}>website</span>  is your business’ first impression.</h1>
-          <p>Your business is unique. Your software should be too. We develop and implement solutions that simplify daily operations and support business growth every step of the way.</p>
+          <h1> Custom Websites, Web Apps and <span style={{color:'#CB8731'}}> Digital Solutions</span> for Growing Businesses</h1>
+          <p>Your business is unique. Your software should be too. We design and develop bespoke websites, web applications and e-commerce platforms that simplify daily operations and support business growth.</p>
           <div className={styles.btnPack}>
             <div className='btnPills'> Get in touch with us </div>
             <div className='btn'>Explore projects <MoveRight size={20} /></div>

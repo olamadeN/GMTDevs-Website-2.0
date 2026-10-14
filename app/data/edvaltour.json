@@ -1,0 +1,34 @@
+[
+   {
+    "evaltour": {
+        "title": "EdvalTours Website Project",
+        "description": "Edval Tours is a leading vacation specialist in Nigeria and West Africa, with years of experience delivering seamless, memorable and personalised travel experiences across Africa and around the world. With a strong commitment to quality, the company has built a reputation for creating well organised holidays tailored to the unique needs and expectations of every traveller. Its highly competent team combines professionalism with personal care, ensuring that every guest receives attentive support throughout their journey and enjoys a truly memorable holiday experience. Proudly based in Nigeria, Edval Tours centres many of its tours and experiences around the country while also curating international travel opportunities. Its strong local presence enables the company to provide hands on support and real time updates.",
+        "images": ["/images/tour1.png", "/images/tour2.png", "/images/tour3.png"],
+        "thumb": "/images/edvaltour.png",
+        "link": "/projects/edvaltour"
+    },
+    "evalbiography": {
+        "title": "EdvalBiography Website Project",
+        "description": "Edval Tours is a leading vacation specialist in Nigeria and West Africa, with years of experience delivering seamless, memorable and personalised travel experiences across Africa and around the world. With a strong commitment to quality, the company has built a reputation for creating well organised holidays tailored to the unique needs and expectations of every traveller. Its highly competent team combines professionalism with personal care, ensuring that every guest receives attentive support throughout their journey and enjoys a truly memorable holiday experience. Proudly based in Nigeria, Edval Tours centres many of its tours and experiences around the country while also curating international travel opportunities. Its strong local presence enables the company to provide hands on support and real time updates.",
+        "images": ["/images/tour1.png", "/images/tour2.png", "/images/tour3.png"],
+        "thumb": "/images/ebiography.png",
+        "link": "/projects/edvalbiography"
+    },
+    "evalartauction": {
+        "title": "Edval Art Auction Website Project",
+        "description": "Edval Tours is a leading vacation specialist in Nigeria and West Africa, with years of experience delivering seamless, memorable and personalised travel experiences across Africa and around the world. With a strong commitment to quality, the company has built a reputation for creating well organised holidays tailored to the unique needs and expectations of every traveller. Its highly competent team combines professionalism with personal care, ensuring that every guest receives attentive support throughout their journey and enjoys a truly memorable holiday experience. Proudly based in Nigeria, Edval Tours centres many of its tours and experiences around the country while also curating international travel opportunities. Its strong local presence enables the company to provide hands on support and real time updates.",
+        "images": ["/images/tour1.png", "/images/tour2.png", "/images/tour3.png"],
+        "thumb": "/images/edvaltour.png",
+        "link": "/projects/edvaltour"
+    },
+    "eEvent": {
+        "title": "E-event Website Project",
+        "description": "Edval Tours is a leading vacation specialist in Nigeria and West Africa, with years of experience delivering seamless, memorable and personalised travel experiences across Africa and around the world. With a strong commitment to quality, the company has built a reputation for creating well organised holidays tailored to the unique needs and expectations of every traveller. Its highly competent team combines professionalism with personal care, ensuring that every guest receives attentive support throughout their journey and enjoys a truly memorable holiday experience. Proudly based in Nigeria, Edval Tours centres many of its tours and experiences around the country while also curating international travel opportunities. Its strong local presence enables the company to provide hands on support and real time updates.",
+        "images": ["/images/tour1.png", "/images/tour2.png", "/images/tour3.png"],
+        "thumb": "/images/eevent.png",
+        "link": "/projects/edvaltour"
+    }
+
+   }
+   
+]
