@@ -37,7 +37,6 @@ body {
 }
 .headerTxt{
   width:47%;
-  border: 1px solid red;
   text-align: center;
   margin-bottom: -50px;
   display: flex;
