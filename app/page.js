@@ -1,13 +1,11 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./component/navbar/page";
 import { CircleChevronRight, MoveRight } from "lucide-react";
-import MockupCarousel from "./component/headerSlider/page";
 import LaptopCarousel from "./component/headerSlider/page";
 import Link from "next/link";
 import AcademySection from "./component/academySection/academy";
 import Testimonials from "./component/testimonialSection/testimonial";
-import Footer from "./component/footer/footer";
+
 
 export default function Home() {
   return (
@@ -17,8 +15,8 @@ export default function Home() {
           <Navbar />
         </div>
         <div className={styles.heroContent}>
-          <h1> Custom Websites, Web Apps and <span style={{color:'#CB8731'}}> Digital Solutions</span> for Growing Businesses</h1>
-          <p>Your business is unique. Your software should be too. We design and develop bespoke websites, web applications and e-commerce platforms that simplify daily operations and support business growth.</p>
+          <h1 className={styles.heroTitle}> Custom Websites, Web Apps and <span style={{color:'#CB8731'}}> Digital Solutions</span> for Growing Businesses</h1>
+          <p>Your business is unique. Your software should be too. We design and develop bespoke websites, web applications, e-commerce platforms and digital solutions that simplify daily operations and support business growth.</p>
           <div className={styles.btnPack}>
             <div className='btnPills'> Get in touch with us </div>
             <div className='btn'>Explore projects <MoveRight size={20} /></div>
@@ -41,7 +39,7 @@ export default function Home() {
             </div>
             <div className={styles.right}>
               <div className={styles.right1}>
-                <p>At GMTDevs, we create clean, effective websites tailored to businesses and personal brands. Our designs focus on functionality, user experience, and your unique goals, making sure your website is not just beautiful but also working.
+                <p>At GMTDevs, we create clean, effective websites and digital solutions tailored to businesses and personal brands. Our designs focus on functionality, user experience, and your unique goals, making sure your website is not just beautiful but also working.
                   We are not just developers; we are your partners in taking your brand online
                   and helping you thrive in the digital world.
                 </p>
@@ -54,7 +52,7 @@ export default function Home() {
           </div>
           <div className={`container ${styles.ourServices}`}>
             <div className={styles.serviceLeft}>
-              <h3>Our <br/> Services</h3>
+              <h3>Our <span>Services</span> </h3>
               <div className='underline'></div>
             </div>
             <div className={styles.ServiceRight}>

@@ -32,9 +32,35 @@
     gap: 8px;
 }
 .textPack div:nth-child(2) h2{
-    font-size: 48px;
-    line-height: 64px;
+    font-size: var(--font-h1);
+    line-height: 1.3333;
 }
 .textPack div:nth-child(2) p{
    line-height: 28px;
+}
+
+@media (max-width: 1400px) {
+
+
+}
+@media (max-width: 1200px) {
+    .textPack{
+        width: 60%;
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .textPack{
+        width: 75%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textPack{
+        width: 100%;
+        gap: 30px;
+    }
 }

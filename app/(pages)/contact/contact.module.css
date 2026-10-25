@@ -1,0 +1,85 @@
+.body{
+    width: 100%;
+    height: auto;
+    background-color: #F4EEE5;
+    padding-top: 48px;
+    padding-bottom: 81px;
+}
+.double{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+.left form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+.left form input, .textarea{
+    width: 100%;
+    padding: 16px 30px;
+    background: #FFFFFF;
+    border: 1px solid #D0CECE;
+    border-radius: 32px;
+    outline: none;
+    font-size: 16px;
+    font-family: var(--font-body);
+}
+.textarea{
+    height: 250px;
+}
+.select{
+    width: 100%;
+    padding: 6px 16px;
+    background: #FFFFFF;
+    border: 1px solid #D0CECE;
+    border-radius: 32px;
+    outline: #D0CECE;
+}
+.select:active{
+    border: 1px solid #D0CECE;
+}
+.submit{
+    background: #D4953D !important;
+    color: #1B1B1B;
+    margin-top: 40px;
+}
+.right{
+    width: 100%;
+    height: 608px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contactPill{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #FFFFFF;
+    border: 1px solid #CB8731;
+    border-radius: 24px;
+    padding: 52px 210px 51px 80px;
+}
+.contactPack{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact{
+    display: flex;
+    gap: 16px;
+}
+.itemHeader{
+    font-weight: 700;
+    font-size: 18px;
+}
+.footerSocials{
+    margin-top: 16px;
+    display: flex;
+    gap:34px ;
+}
