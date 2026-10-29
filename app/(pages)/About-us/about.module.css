@@ -119,3 +119,71 @@
   padding: 80px 0;
   background-color: #EDE8E0;
 }
+
+@media (max-width: 1400px) {
+    .darkBrown{
+        width: 78%;
+    }
+    .darkBrown img{
+        left: 95%;
+    }
+    .getThingsCardPack{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 1200px) {
+    .darkBrown{
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .darkBrown{
+        display: none;
+    }
+    .doubleRightP{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .aboutSection1 .sectionRight{
+        height: auto;
+        padding-bottom: 80px;
+    }
+    .aboutCardInner div{
+        align-self: center;
+    }
+    .aboutCard2{
+        align-self: center;
+    }
+    .aboutCard3{
+        align-self: center;
+    }
+    .getThingsCardPack{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btnPack{ 
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+}
+@media (max-width: 576px) {
+    .aboutSection1 .sectionLeft{
+        padding-top: 80px;       
+        padding-bottom: 80px;       
+    }
+    .aboutCardInner{
+        margin-top: 0px;
+    }
+    .aboutCardInner div{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+}

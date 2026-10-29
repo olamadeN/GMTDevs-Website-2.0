@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -25,4 +25,221 @@
 .active{
     background-color: var(--text-gold-dark);
     border-radius: 32px;
+} */
+
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.logoLink {
+  display: inline-flex;
+  position: relative;
+  z-index: 12;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: block;
+  width: 165px;
+  height: 59px;
+  object-fit: contain;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 16px;
+  background: #fff;
+  padding: 8px;
+  border-radius: 32px;
+}
+
+.navLinks li {
+  list-style: none;
+  padding: 10px 16px;
+}
+
+.navLinks a {
+  display: inline-block;
+}
+
+.active {
+  background-color: var(--text-gold-dark);
+  border-radius: 32px;
+}
+
+.academy {
+  white-space: nowrap;
+}
+
+.menuToggle,
+.mobilePanel {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+    .navLinks {
+        gap: 8px;
+    }
+    .navLinks li {
+        padding: 10px 8px;
+    }
+}
+@media (max-width: 900px) {
+  .navbar {
+    min-height: 59px;
+  }
+
+  .logo {
+    width: clamp(120px, 24vw, 150px);
+    height: auto;
+  }
+
+  .navLinks,
+  .academy {
+    display: none;
+  }
+
+  .menuToggle {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menuToggle:focus-visible {
+    outline: 2px solid var(--text-gold-dark);
+    outline-offset: 3px;
+  }
+
+  .menuLine {
+    display: block;
+    width: 26px;
+    height: 2px;
+    border-radius: 99px;
+    background: currentColor;
+    transform-origin: center;
+    transition: transform 320ms cubic-bezier(.22, 1, .36, 1), opacity 180ms ease;
+  }
+
+  .menuToggleOpen .menuLine:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menuToggleOpen .menuLine:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .menuToggleOpen .menuLine:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .mobilePanel {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--background, #fafafa);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+    overflow-y: auto;
+    transition: transform 440ms cubic-bezier(.22, 1, .36, 1),
+                opacity 320ms ease, visibility 440ms;
+  }
+
+  .mobilePanelOpen {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition: transform 440ms cubic-bezier(.22, 1, .36, 1), opacity 320ms ease;
+  }
+
+  .portalClose {
+    position: absolute;
+    top: 22px;
+    right: max(5%, 24px);
+    z-index: 2;
+  }
+
+  .mobilePanelInner {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 110px max(24px, 8vw) 56px;
+  }
+
+  .mobileLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(16px, 3vh, 26px);
+  }
+
+  .mobileLinks a {
+    display: inline-block;
+    font-size: clamp(28px, 5vw, 32px);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-primary);
+    transition: color 180ms ease, transform 180ms ease;
+  }
+
+  .mobileLinks a:hover,
+  .mobileLinks a:focus-visible,
+  .mobileLinks .mobileActive {
+    color: var(--text-gold-dark);
+  }
+
+  .mobileLinks a:focus-visible {
+    outline-offset: 5px;
+  }
+
+  .mobileAcademy {
+    margin-top: 42px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(27, 27, 27, .13);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menuLine,
+  .mobilePanel,
+  .mobilePanelOpen,
+  .mobileLinks a {
+    transition-duration: 0.01ms;
+  }
 }

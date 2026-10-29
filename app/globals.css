@@ -315,8 +315,6 @@ a {
   font-family: var(--font-body);
 }
 
-
-
 h1 {
   font-family: var(--font-body);
   font-weight: 800;
@@ -357,8 +355,6 @@ p {
   line-height: 32px;
 }
 
-
-
 .container {
   width: 83.33%;
   height: auto;
@@ -369,7 +365,8 @@ p {
   top: 32px;
   width: 84%;
   height: 87px;
-  transform: translateX(8%); 
+  margin: auto auto;
+/*   transform: translateX(8%); */
   display: flex;
   align-items: flex-end;
 }
@@ -445,23 +442,63 @@ p {
 
 }
 @media (max-width: 1200px) {
-    .textPack{
-        width: 60%;
-        gap: 40px;
-    }
+  .textPack{
+    width: 60%;
+    gap: 40px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .navbarContainer {
+    width: 90%;
+    margin-inline: auto;
+    transform: none;
+  }
+  .double {
+    gap: 750px;
+  }
+  .doubleRight {
+    width: 100%;
+
+  }
 }
 
 
 @media (max-width: 768px) {
-    .textPack{
-        width: 75%;
-        gap: 30px;
-    }
+  .headerTxt {
+    width: 67%;
+  }
+  .textPack{
+    width: 75%;
+    gap: 30px;
+  }
+  .double {
+    gap: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .headerTxt {
+    width: 87%;
+  }
+  .double {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .doubleLeft {
+    width: fit-content;
+    align-items: self-start;
+    padding-top: 0px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
 }
 
 @media (max-width: 480px) {
-    .textPack{
-        width: 100%;
-        gap: 30px;
-    }
+  .textPack{
+    width: 100%;
+    gap: 30px;
+  }
 }

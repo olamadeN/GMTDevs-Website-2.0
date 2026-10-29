@@ -1,11 +1,11 @@
 .testimonials {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: center;
 }
 
 /* --------------------------------
@@ -22,9 +22,9 @@
 }
 
 .introTxtBox{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .intro p {
   font-size: 20px;
@@ -177,13 +177,27 @@
     min-height: auto;
   }
 
-  .controls {
-    position: static;
-    margin-top: 25px;
+  .introTxtBox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .introTxtBox h3{
+
+    margin-bottom: 15px;
   }
 
+  .controls {
+    position: static;
+    margin-top: 15px;
+  }
+  .cardWrapper {
+    min-width: 0;
+    overflow: hidden;
+    height: fit-content;
+  }
   .card {
-    min-height: 210px;
+    min-height: auto;
   }
 }
 

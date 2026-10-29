@@ -94,7 +94,7 @@ const About = () => {
                             </div>
                             <div className={styles.cardContent}>
                                 <h4>Support</h4>
-                                <p>Post-launch, we support your website with refinements, updates, hosting and maintenance ensuring it grows alongside your business.</p>
+                                <p>Post-launch, we support {/* your website */} with refinements, updates, hosting and maintenance ensuring it grows alongside your business.</p>
                             </div>
                         </div>
                     </div>
