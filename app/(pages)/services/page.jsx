@@ -25,11 +25,11 @@ const Services = () => {
             </header>
             <div>
                 <section className={styles.aboutSection1}>
-                    <div className={Styles.aboutUsCont}>
-                        <div className={Styles.left}>
+                    <div className={`${Styles.aboutUsCont} ${styles.servicesCont}`}>
+                        <div className={`${Styles.left} ${styles.left}`}>
                             <p className={styles.Number}>01.</p>
                         </div>
-                        <div className={Styles.right}>
+                        <div className={`${Styles.right} ${styles.right}`}>
                             <div className={Styles.right1}>
                                 <h3>Design services</h3>
                                 <p>Design is not decoration. It is how people understand your product, navigate your business and decide what to do next. We design digital experiences that bring clarity to complex ideas and make products easier for people to understand and use.</p>
@@ -78,11 +78,11 @@ const Services = () => {
             <br /><br />
             <div>
                 <section className={styles.aboutSection1}>
-                    <div className={Styles.aboutUsCont}>
-                        <div className={Styles.left}>
+                    <div className={`${Styles.aboutUsCont} ${styles.servicesCont}`}>
+                        <div className={`${Styles.left} ${styles.left}`}>
                             <p className={styles.Number}>02.</p>
                         </div>
-                        <div className={Styles.right}>
+                        <div className={`${Styles.right} ${styles.right}`}>
                             <div className={Styles.right1}>
                                 <h3>Development services</h3>
                                 <p>A beautiful interface is only the beginning. Our development team turns concepts and designs into reliable digital products that work across devices, users and real-world business situations.</p>
