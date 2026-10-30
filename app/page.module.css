@@ -10,7 +10,7 @@
   flex-direction:column;
   gap: 8px;
   align-items:center;
-  border: 1px solid black;
+
 }
 .heroTitle {
   font-size: clamp(1.875rem, 2.5vw, 3rem);
