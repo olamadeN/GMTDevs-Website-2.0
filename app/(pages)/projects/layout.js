@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
             </div>
             <div className='container headerContent'>                
                 <div className='headerTxt'>
-                    <h1> Explore our recent <span style={{color: 'var(--text-secondary)'}}>projects</span>.</h1>
-                    <p>A selection of websites, applications, platforms and digital experiences we've designed and developed for businesses and organizations.</p>
+                    <h1> Explore our {/* recent */} <span style={{color: 'var(--text-secondary)'}}>projects</span>.</h1>
+                    <p>A selection of {/* websites, applications, platforms and */} digital experiences we've designed and developed for businesses and organizations.</p>
                 </div>
                 <div className='globeWrapper'>
                     <img className='globe' src='/images/globe.png' alt="globe" />

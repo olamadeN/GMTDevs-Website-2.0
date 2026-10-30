@@ -279,6 +279,9 @@
   .cardCont{
     width: 100%;
   } 
+  .section2CardOverlay{
+    opacity: 100%;
+  }
   .section2Card{
     height: 344px ;
   }
@@ -315,12 +318,17 @@
     height: auto;
     align-items: start;
   }
-}
-@media (max-width: 480px) {
+
   .section2CardCont{
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 24px;
   }
+}
+@media (max-width: 480px) {
+/*   .section2CardCont{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  } */
   .section2Card{
     border-radius: 12px;
     object-position: top;
