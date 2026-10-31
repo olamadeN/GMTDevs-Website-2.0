@@ -1,11 +1,15 @@
+
 import Navbar from '@/app/component/navbar/page';
 import styles from './services.module.css';
 import Styles from '../../page.module.css';
 import { MoveRight } from 'lucide-react';
+export { metadata } from "./metadata";
 import AcademySection from '@/app/component/academySection/academy';
+import Link from 'next/link';
+
 
 const Services = () => {
-  
+
     return ( 
         <div className={styles.aboutCont}>
             <header className='header'>
@@ -25,7 +29,7 @@ const Services = () => {
             </header>
             <div>
                 <section className={styles.aboutSection1}>
-                    <div className={`${Styles.aboutUsCont} ${styles.servicesCont}`}>
+                    <div id='design' className={`${Styles.aboutUsCont} ${styles.servicesCont}`}>
                         <div className={`${Styles.left} ${styles.left}`}>
                             <p className={styles.Number}>01.</p>
                         </div>
@@ -69,8 +73,8 @@ const Services = () => {
                         </div>
                     </div>
                     <div className='btnPack'>
-                        <div className='btnPills'> Get in touch with us </div>
-                        <div className='btn'>Explore projects <MoveRight size={20} /></div>
+                        <Link href="/contact" className='btnPills'> Get in touch with us </Link>
+                        <Link href="/projects" className='btn'>Explore projects <MoveRight size={20} /></Link>
                     </div>
                 </section>
             </div>
@@ -78,7 +82,7 @@ const Services = () => {
             <br /><br />
             <div>
                 <section className={styles.aboutSection1}>
-                    <div className={`${Styles.aboutUsCont} ${styles.servicesCont}`}>
+                    <div id='development' className={`${Styles.aboutUsCont} ${styles.servicesCont}`}>
                         <div className={`${Styles.left} ${styles.left}`}>
                             <p className={styles.Number}>02.</p>
                         </div>
@@ -122,8 +126,8 @@ const Services = () => {
                         </div>
                     </div>
                     <div className='btnPack'>
-                        <div className='btnPills'> Get in touch with us </div>
-                        <div className='btn'>Explore projects <MoveRight size={20} /></div>
+                        <Link href="/contact" className='btnPills'> Get in touch with us </Link>
+                        <Link href="/projects" className='btn'>Explore projects <MoveRight size={20} /></Link>
                     </div>
                 </section>
             </div>

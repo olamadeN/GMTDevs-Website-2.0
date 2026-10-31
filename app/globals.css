@@ -490,9 +490,9 @@ p {
     align-items: self-start;
     padding-top: 0px;
   }
-  .btn {
+  .btn, .btnPills {
     font-size: 14px;
-    padding: 10px 8px;
+    padding: 10px 12px;
   }
 }
 

@@ -6,8 +6,13 @@ import Navbar from "@/app/component/navbar/page";
 
 
 export const metadata = {
-  title: "GMTDevs Website",
-  description: "Your website is your business's first impression. Make it count with GMTDevs.",
+    title: "Our Projects & Portfolio - GMTDevs Global",
+    description: "Explore the GMTDevs Global portfolio of custom websites, web applications, and digital solutions built to deliver seamless user experiences, functionality, and business value.",
+    openGraph: {
+        title: "Our Projects & Portfolio - GMTDevs Global",
+        description: "Explore the GMTDevs Global portfolio of custom websites, web applications, and digital solutions built to deliver seamless user experiences, functionality, and business value.",
+        url: "/projects",
+    },
 };
 
 export default function RootLayout({ children }) {

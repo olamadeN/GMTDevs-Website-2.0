@@ -9,8 +9,39 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "GMTDevs Website",
-  description: "Your website is your business's first impression. Make it count with GMTDevs.",
+  title: "GMTDevs Global - Web Design & Development",
+  description: "GMTDevs Global delivers custom website design, web development, web applications, and digital solutions that help businesses and brands grow.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "GMTDevs Global",
+    title: "GMTDevs Global - Web Design & Development",
+    description:
+      "Custom websites, web applications, and digital solutions built to help businesses and brands grow.",
+    url: "/",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "GMTDevs Global - Web Design and Development",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {

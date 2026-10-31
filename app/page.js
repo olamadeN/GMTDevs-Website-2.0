@@ -1,3 +1,4 @@
+'use client'
 import styles from "./page.module.css";
 import Navbar from "./component/navbar/page";
 import { CircleChevronRight, MoveRight } from "lucide-react";
@@ -5,9 +6,12 @@ import LaptopCarousel from "./component/headerSlider/page";
 import Link from "next/link";
 import AcademySection from "./component/academySection/academy";
 import Testimonials from "./component/testimonialSection/testimonial";
+import { useRouter } from "next/navigation";
+
 
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className={styles.page}>
       <header className={styles.header}>
@@ -18,8 +22,8 @@ export default function Home() {
           <h1 className={styles.heroTitle}> Custom Websites, Web Apps and <span style={{color:'#CB8731'}}> Digital Solutions</span> for Growing Businesses</h1>
           <p>Your business is unique. Your software should be too. We design and develop bespoke websites, web applications, e-commerce platforms and digital solutions that simplify daily operations and support business growth.</p>
           <div className={styles.btnPack}>
-            <div className='btnPills'> Get in touch with us </div>
-            <div className='btn'>Explore projects <MoveRight size={20} /></div>
+            <div onClick={()=>router.push('/contact')} className='btnPills'> Get in touch with us </div>
+            <div className='btn' onClick={()=>router.push('/projects')}>Explore projects <MoveRight size={20} /></div>
           </div>
         </div>
         <div className={styles.heroContent2}>     
@@ -43,7 +47,7 @@ export default function Home() {
                   We are not just developers; we are your partners in taking your brand online
                   and helping you thrive in the digital world.
                 </p>
-                <div className='btn'>Learn more <MoveRight size={20} /></div>
+                <div onClick={()=>router.push('/About-us')} className='btn'>Learn more <MoveRight size={20} /></div>
               </div>
               <div className={styles.right2}>
                 <img src='/images/plane.png'/>
@@ -63,7 +67,7 @@ export default function Home() {
                   We design and develop powerful, scalable applications tailored to your business needs. Our solutions are readily and directly built for security, functionality, performance and reliability, helping your business turn novel ideas into dependable digital products. 
                 </p>
                 <br />
-                <div className='btn'>Learn more <MoveRight size={20} /></div>
+                <div onClick={()=>router.push('/services#design')} className='btn'>Learn more <MoveRight size={20} /></div>
               </div>
               <div className={styles.cardCont}>
                 <img src="/images/devService.png" alt="Development Service" />
@@ -72,7 +76,7 @@ export default function Home() {
                   We develop tailored software solutions that address your unique business requirements and workflows. Our applications are designed to improve efficiency, automate processes, and provide scalable solutions that grow with your organization.
                 </p>
                 <br />
-                <div className='btn'>Learn more <MoveRight size={20} /></div>
+                <div onClick={()=>router.push('/services#development')} className='btn'>Learn more <MoveRight size={20} /></div>
               </div>
             </div>
           </div>
@@ -85,7 +89,7 @@ export default function Home() {
                 <h5>GMTDevs</h5>
                 <h2>Curious About Our Work?</h2>
               </div>
-              <div className="btnPills">See more <MoveRight size={20} /></div>
+              <div onClick={()=>router.push('/projects')} className="btnPills">See more <MoveRight size={20} /></div>
             </div>
             <div className={styles.section2CardCont}>
               <div className={styles.section2Card}>

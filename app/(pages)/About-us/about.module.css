@@ -166,7 +166,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .btnPack{ 
-        justify-content: space-between;
+/*         justify-content: space-between; */
         margin-top: 32px;
     }
 }

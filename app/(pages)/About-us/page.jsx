@@ -1,10 +1,12 @@
+
 import Navbar from '@/app/component/navbar/page';
+export { metadata } from "./metadata";
 import styles from './about.module.css';
 import { MoveRight } from 'lucide-react';
 import AcademySection from '@/app/component/academySection/academy';
 import Testimonials from '@/app/component/testimonialSection/testimonial';
+import Link from 'next/link';
 const About = () => {
-  
     return ( 
         <div className={styles.aboutCont}>
             <header className='header'>
@@ -99,8 +101,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className={styles.btnPack}>
-                        <div className='btnPills'> Get in touch with us </div>
-                        <div className='btn'>Explore projects <MoveRight size={20} /></div>
+                        <Link href="/contact" className='btnPills'> Get in touch with us </Link>
+                        <Link href="/projects" className='btn'>Explore projects <MoveRight size={20} /></Link>
                     </div>
                 </div>
             </section>
