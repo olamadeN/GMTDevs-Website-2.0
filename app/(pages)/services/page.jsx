@@ -6,6 +6,9 @@ import { MoveRight } from 'lucide-react';
 export { metadata } from "./metadata";
 import AcademySection from '@/app/component/academySection/academy';
 import Link from 'next/link';
+import SlideInRight from '@/app/component/animations/slideRight';
+import SlideInLeft from '@/app/component/animations/slideLeft';
+import SlideUp from '@/app/component/animations/slideUp';
 
 
 const Services = () => {
@@ -16,10 +19,12 @@ const Services = () => {
                 <div className="navbarContainer">
                     <Navbar />
                 </div>
-                <div className='container headerContent'>                
+                <div className='container headerContent'>   
                     <div className='headerTxt'>
-                        <h1>Our <span style={{ color: 'var(--text-secondary)' }}>Services</span></h1>
-                        <p>Our Mission Is To Make Your Business Better Through Technology</p>
+                        <SlideUp delay={0.2} duration={0.8} distance={30}>
+                            <h1>Our <span style={{ color: 'var(--text-secondary)' }}>Services</span></h1>
+                            <p>Our Mission Is To Make Your Business Better Through Technology</p>
+                        </SlideUp>
                     </div>
                     <div className='globeWrapper'>
                         <img className='globe' src='/images/globe.png' alt="globe" />
@@ -45,33 +50,39 @@ const Services = () => {
                     </div>
                 </section>
                 <section className={`container ${styles.aboutSection2}`}>
-                    <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
-                        <div className={styles.sectionTxtPack}>
-                            <h3>UI/UX Design</h3>
-                            <p>We design digital experiences that are intuitive, purposeful and easy to navigate. From user flows and information architecture to wireframes and high fidelity interfaces, we think through how every part of the experience should work. The goal is to create products that feel natural to use while helping businesses achieve their objectives.</p>
-                        </div>  
-                        <div className={styles.sectionImgPack}>
-                            <img src="/images/uiUx.png" alt="man holding a laptop" />
+                    <SlideInRight delay={0.35} distance={50}>
+                        <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
+                            <div className={styles.sectionTxtPack}>
+                                <h3>UI/UX Design</h3>
+                                <p>We design digital experiences that are intuitive, purposeful and easy to navigate. From user flows and information architecture to wireframes and high fidelity interfaces, we think through how every part of the experience should work. The goal is to create products that feel natural to use while helping businesses achieve their objectives.</p>
+                            </div>  
+                            <div className={styles.sectionImgPack}>
+                                <img src="/images/uiUx.png" alt="man holding a laptop" />
+                            </div>
                         </div>
-                    </div>
-                    <div className={`${styles.doubleSection} ${styles.sectionImgRight}`}>
-                        <div className={styles.sectionTxtPack}>
-                            <h3>Website Design</h3>
-                            <p>We turn product ideas into clear, structured and usable digital experiences. We explore the users, features, journeys and interactions that make a product valuable before shaping them into a complete interface. Whether you are starting with an early concept or refining an existing product, we help create an experience that makes sense from the first interaction to the last.</p>
-                        </div>  
-                        <div className={styles.sectionImgPack}>
-                            <img src="/images/webDesign.png" alt="man holding a laptop" />
+                    </SlideInRight>
+                    <SlideInLeft delay={0.2} distance={30} duration={0.8}>
+                        <div className={`${styles.doubleSection} ${styles.sectionImgRight}`}>
+                            <div className={styles.sectionTxtPack}>
+                                <h3>Website Design</h3>
+                                <p>We turn product ideas into clear, structured and usable digital experiences. We explore the users, features, journeys and interactions that make a product valuable before shaping them into a complete interface. Whether you are starting with an early concept or refining an existing product, we help create an experience that makes sense from the first interaction to the last.</p>
+                            </div>  
+                            <div className={styles.sectionImgPack}>
+                                <img src="/images/webDesign.png" alt="man holding a laptop" />
+                            </div>
                         </div>
-                    </div>
-                    <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
-                        <div className={styles.sectionTxtPack}>
-                            <h3>Product Redesign</h3>
-                            <p>When an existing digital product is difficult to use, simply giving it a new look may not solve the problem. We examine the current experience to identify friction, confusing workflows and missed opportunities, then redesign the product around how users actually need to interact with it. The result is a clearer, more efficient experience without losing the parts that already work.</p>
-                        </div>  
-                        <div className={styles.sectionImgPack}>
-                            <img src="/images/prodRedesign.png" alt="man holding a laptop" />
+                    </SlideInLeft>
+                    <SlideInRight delay={0.2} distance={30} duration={0.8}>
+                        <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
+                            <div className={styles.sectionTxtPack}>
+                                <h3>Product Redesign</h3>
+                                <p>When an existing digital product is difficult to use, simply giving it a new look may not solve the problem. We examine the current experience to identify friction, confusing workflows and missed opportunities, then redesign the product around how users actually need to interact with it. The result is a clearer, more efficient experience without losing the parts that already work.</p>
+                            </div>  
+                            <div className={styles.sectionImgPack}>
+                                <img src="/images/prodRedesign.png" alt="man holding a laptop" />
+                            </div>
                         </div>
-                    </div>
+                    </SlideInRight>
                     <div className='btnPack'>
                         <Link href="/contact" className='btnPills'> Get in touch with us </Link>
                         <Link href="/projects" className='btn'>Explore projects <MoveRight size={20} /></Link>
@@ -98,33 +109,39 @@ const Services = () => {
                     </div>
                 </section>
                 <section className={`container ${styles.aboutSection2}`}>
-                    <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
-                        <div className={styles.sectionTxtPack}>
-                            <h3>Website Development</h3>
-                            <p>We develop web applications that allow businesses and their customers to do more online. Whether you need a customer portal, dashboard, booking platform or custom application, we build the functionality around the workflows that matter most. Every component is developed with usability, reliability and the realities of everyday use in mind</p>
-                        </div>  
-                        <div className={styles.sectionImgPack}>
-                            <img src="/images/webDev.png" alt="man holding a laptop" />
+                    <SlideInLeft delay={0.2} distance={30} duration={0.8}>
+                        <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
+                            <div className={styles.sectionTxtPack}>
+                                <h3>Website Development</h3>
+                                <p>We develop web applications that allow businesses and their customers to do more online. Whether you need a customer portal, dashboard, booking platform or custom application, we build the functionality around the workflows that matter most. Every component is developed with usability, reliability and the realities of everyday use in mind</p>
+                            </div>  
+                            <div className={styles.sectionImgPack}>
+                                <img src="/images/webDev.png" alt="man holding a laptop" />
+                            </div>
                         </div>
-                    </div>
-                    <div className={`${styles.doubleSection} ${styles.sectionImgRight}`}>
-                        <div className={styles.sectionTxtPack}>
-                            <h3>SaaS, Business CMS Platforms</h3>
-                            <p>We build custom digital platforms that help businesses bring important processes, information and operations into one place. Instead of relying on disconnected tools and repetitive manual processes, your team gets a system designed around how your organization actually works. </p>
-                        </div>  
-                        <div className={styles.sectionImgPack}>
-                            <img src="/images/SaaS.png" alt="man holding a laptop" />
+                    </SlideInLeft>
+                    <SlideInRight delay={0.2} distance={30} duration={0.8}>
+                        <div className={`${styles.doubleSection} ${styles.sectionImgRight}`}>
+                            <div className={styles.sectionTxtPack}>
+                                <h3>SaaS, Business CMS Platforms</h3>
+                                <p>We build custom digital platforms that help businesses bring important processes, information and operations into one place. Instead of relying on disconnected tools and repetitive manual processes, your team gets a system designed around how your organization actually works. </p>
+                            </div>  
+                            <div className={styles.sectionImgPack}>
+                                <img src="/images/SaaS.png" alt="man holding a laptop" />
+                            </div>
                         </div>
-                    </div>
-                    <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
-                        <div className={styles.sectionTxtPack}>
-                            <h3>Post-Launch Support</h3>
-                            <p>Launching a digital product is only the beginning. We provide ongoing technical support, improvements, updates and feature development to keep your website or application working as your needs change. Whether you need to fix issues, improve performance or introduce new capabilities, we help your product remain useful and dependable over time.</p>
-                        </div>  
-                        <div className={styles.sectionImgPack}>
-                            <img src="/images/support.png" alt="man holding a laptop" />
+                    </SlideInRight>
+                    <SlideInLeft delay={0.2} distance={30} duration={0.8}>
+                        <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
+                            <div className={styles.sectionTxtPack}>
+                                <h3>Post-Launch Support</h3>
+                                <p>Launching a digital product is only the beginning. We provide ongoing technical support, improvements, updates and feature development to keep your website or application working as your needs change. Whether you need to fix issues, improve performance or introduce new capabilities, we help your product remain useful and dependable over time.</p>
+                            </div>  
+                            <div className={styles.sectionImgPack}>
+                                <img src="/images/support.png" alt="man holding a laptop" />
+                            </div>
                         </div>
-                    </div>
+                    </SlideInLeft>
                     <div className='btnPack'>
                         <Link href="/contact" className='btnPills'> Get in touch with us </Link>
                         <Link href="/projects" className='btn'>Explore projects <MoveRight size={20} /></Link>

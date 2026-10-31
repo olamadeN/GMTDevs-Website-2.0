@@ -3,6 +3,7 @@ import imStyles from '../../page.module.css';
 import AcademySection from "@/app/component/academySection/academy";
 import Testimonials from "@/app/component/testimonialSection/testimonial";
 import Navbar from "@/app/component/navbar/page";
+import SlideUp from '@/app/component/animations/slideUp';
 
 
 export const metadata = {
@@ -24,8 +25,10 @@ export default function RootLayout({ children }) {
             </div>
             <div className='container headerContent'>                
                 <div className='headerTxt'>
-                    <h1> Explore our {/* recent */} <span style={{color: 'var(--text-secondary)'}}>projects</span>.</h1>
-                    <p>A selection of {/* websites, applications, platforms and */} digital experiences we've designed and developed for businesses and organizations.</p>
+                    <SlideUp delay={0.2} duration={0.8} distance={30}> 
+                        <h1> Explore our {/* recent */} <span style={{color: 'var(--text-secondary)'}}>projects</span>.</h1>
+                        <p>A selection of {/* websites, applications, platforms and */} digital experiences we've designed and developed for businesses and organizations.</p>
+                    </SlideUp>
                 </div>
                 <div className='globeWrapper'>
                     <img className='globe' src='/images/globe.png' alt="globe" />

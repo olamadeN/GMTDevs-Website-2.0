@@ -6,6 +6,8 @@ import { MoveRight } from 'lucide-react';
 import AcademySection from '@/app/component/academySection/academy';
 import Testimonials from '@/app/component/testimonialSection/testimonial';
 import Link from 'next/link';
+import SlideUp from '@/app/component/animations/slideUp';
+import SlideInRight from '@/app/component/animations/slideRight';
 const About = () => {
     return ( 
         <div className={styles.aboutCont}>
@@ -13,11 +15,14 @@ const About = () => {
                 <div className="navbarContainer">
                     <Navbar />
                 </div>
-                <div className='container headerContent'>                
+                <div className='container headerContent'>   
                     <div className='headerTxt'>
-                        <h1><span style={{ color: 'var(--text-secondary)' }}>About</span> us</h1>
-                        <p>We develop and implement solutions that support your business growth and simplify daily operations every step of the way.</p>
+                        <SlideUp delay={0.2} duration={0.8} distance={30}> 
+                            <h1><span style={{ color: 'var(--text-secondary)' }}>About</span> us</h1>
+                            <p>We develop and implement solutions that support your business growth and simplify daily operations every step of the way.</p>
+                        </SlideUp>
                     </div>
+                    
                     <div className='globeWrapper'>
                         <img className='globe' src='/images/globe.png' alt="globe" />
                     </div>
@@ -40,18 +45,25 @@ const About = () => {
                     </div>  
                     <div className={styles.aboutCardCont}>
                         <div className={styles.aboutCardInner}>
-                            <div className={styles.aboutCard1}>
-                                <p>Business</p>
-                                <p>We understand the objectives behind the product and the people it needs to serve.</p>
-                            </div>
-                            <div className={styles.aboutCard2}>
-                                <p>Design</p>
-                                <p>We create experiences that are clear, intuitive and purposeful.</p>
-                            </div>
-                            <div className={styles.aboutCard3}>
-                                <p>Development</p>
-                                <p>We build reliable digital products that can support real users and real growth. The result are solutions that aren’t only functional, but actually works.</p>
-                            </div>
+            
+                                    <div className={`${styles.aboutCard1} ${styles.card}`}>                                    
+                                        <p>Business</p>
+                                        <p>We understand the objectives behind the product and the people it needs to serve.</p>
+                                    </div>
+                            
+            
+                                    <div className={`${styles.aboutCard2} ${styles.card}`}>
+                                        <p>Design</p>
+                                        <p>We create experiences that are clear, intuitive and purposeful.</p>
+                                    </div>
+                                                    
+            
+                                    <div className={`${styles.aboutCard3} ${styles.card}`}>
+                                        <p>Development</p>
+                                        <p>We build reliable digital products that can support real users and real growth. The result are solutions that aren’t only functional, but actually works.</p>
+                                    </div>
+                            
+                            
                         </div>
                     </div>
                 </div>

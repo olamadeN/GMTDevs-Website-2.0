@@ -107,6 +107,7 @@ import Select from 'react-select'
 import AcademySection from "@/app/component/academySection/academy";
 import { Mail, MapPinned, Phone } from "lucide-react";
 import { useState } from "react";
+import SlideUp from "@/app/component/animations/slideUp";
 const ContactClient = () => {
     const [selectedService, setSelectedService] = useState(null);
     const [sending, setSending] = useState(false);
@@ -159,8 +160,10 @@ const ContactClient = () => {
                 </div>
                 <div className='container headerContent'>                
                     <div className='headerTxt'>
-                        <h1> Get in <span style={{color: 'var(--text-secondary)'}}>touch</span> with us.</h1>
-                        <p>Do you have a project you want to start, a product that needs a rethink, or a business process that could work better with technology?</p>
+                        <SlideUp delay={0.2} duration={0.8} distance={30}> 
+                            <h1> Get in <span style={{color: 'var(--text-secondary)'}}>touch</span> with us.</h1>
+                            <p>Do you have a project you want to start, a product that needs a rethink, or a business process that could work better with technology?</p>
+                        </SlideUp>
                     </div>
                     <div className='globeWrapper'>
                         <img className='globe' src='/images/globe.png' alt="globe" />

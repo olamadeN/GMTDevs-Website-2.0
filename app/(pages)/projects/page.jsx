@@ -3,6 +3,7 @@ import styles from './projects.module.css';
 import imStyles from '../../page.module.css';
 import { CircleChevronRight } from "lucide-react";
 import { useRouter } from 'next/navigation';
+import SlideUp from '@/app/component/animations/slideUp';
 
 const Data = [
     {
@@ -70,18 +71,21 @@ const ProjectsPage = () => {
             <h2>Here’s a number of selected works . . . </h2>
             <div className={imStyles.section2CardCont}>
                 { Data.map((proj, index)=>(
-                    <div key={index} onClick={() => router.push(`/projects/${proj.slug}?data=${JSON.stringify(proj)}`)} className={imStyles.section2Card}>
-                        <img src={proj.thumb} alt="edvaltours" />
-                        <div className={imStyles.section2CardOverlay}>
-                            <div className={`container ${imStyles.overlayTxt}`}>
-                                <div>
-                                    <p>{proj.title}</p>
-                                    <p>{proj.year}</p>
+                    <SlideUp delay={0.1} duration={0.8} distance={30}> 
+                        <div key={index} onClick={() => router.push(`/projects/${proj.slug}?data=${JSON.stringify(proj)}`)} className={imStyles.section2Card}>
+                            <img src={proj.thumb} alt="edvaltours" />
+                            <div className={imStyles.section2CardOverlay}>
+                                <div className={`container ${imStyles.overlayTxt}`}>
+                                    <div>
+                                        <p>{proj.title}</p>
+                                        <p>{proj.year}</p>
+                                    </div>
+                                    <CircleChevronRight size={28}/>
                                 </div>
-                                <CircleChevronRight size={28}/>
                             </div>
                         </div>
-                    </div>))
+                    </SlideUp>
+                    ))
                 }
             </div>
         </section>
