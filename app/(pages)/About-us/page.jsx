@@ -46,23 +46,20 @@ const About = () => {
                     <div className={styles.aboutCardCont}>
                         <div className={styles.aboutCardInner}>
             
-                                    <div className={`${styles.aboutCard1} ${styles.card}`}>                                    
-                                        <p>Business</p>
-                                        <p>We understand the objectives behind the product and the people it needs to serve.</p>
-                                    </div>
-                            
-            
-                                    <div className={`${styles.aboutCard2} ${styles.card}`}>
-                                        <p>Design</p>
-                                        <p>We create experiences that are clear, intuitive and purposeful.</p>
-                                    </div>
-                                                    
-            
-                                    <div className={`${styles.aboutCard3} ${styles.card}`}>
-                                        <p>Development</p>
-                                        <p>We build reliable digital products that can support real users and real growth. The result are solutions that aren’t only functional, but actually works.</p>
-                                    </div>
-                            
+                            <div className={`${styles.aboutCard1} ${styles.card}`}>                                    
+                                <p>Business</p>
+                                <p>We understand the objectives behind the product and the people it needs to serve.</p>
+                            </div>                    
+    
+                            <div className={`${styles.aboutCard2} ${styles.card}`}>
+                                <p>Design</p>
+                                <p>We create experiences that are clear, intuitive and purposeful.</p>
+                            </div>                                            
+    
+                            <div className={`${styles.aboutCard3} ${styles.card}`}>
+                                <p>Development</p>
+                                <p>We build reliable digital products that can support real users and real growth. The result are solutions that aren’t only functional, but actually works.</p>
+                            </div>                           
                             
                         </div>
                     </div>

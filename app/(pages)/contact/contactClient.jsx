@@ -221,7 +221,7 @@ const ContactClient = () => {
                             </div>
                             <div className={styles.contact}>
                                 <MapPinned color="#CB8731"/>
-                                <p>123 Newtown Lane, Ikoyi, Lagos.</p>
+                                <p>Akesan, Alimosho, Lagos State.</p>
                             </div>
                         </div>
                         <div>
