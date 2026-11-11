@@ -17,7 +17,7 @@ const AcademySection = () => {
                         <p>Our academy is a hands-on learning space for people who want to get into tech and actually understand how things work. Learn coding, software development, and other digital skills by building projects, solving problems, and learning from people who build technology for a living.</p>   
                         
                     </div>
-                    <div className='btnPills'>Learn more <MoveRight size={20} /></div>
+                    <a href='https://academy.gmtdevs.com/' target='__blank' className='btnPills'>Learn more <MoveRight size={20} /></a>
                 </div>
             </div>
             

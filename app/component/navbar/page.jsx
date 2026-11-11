@@ -1,27 +1,3 @@
-/* 'use client';
-import { MoveRight } from "lucide-react";
-import styles from "./navbar.module.css";
-import { usePathname } from "next/navigation";
-const Navbar = () => {
-    const pathname = usePathname();
-    return (
-        <div className={styles.navbar}> 
-            <img style={{ cursor: 'pointer' }} onClick={() => window.location.href = '/'} src="/images/logo.png" alt="Logo" className={styles.logo} />
-            <ul className={styles.navLinks}>
-                <li className={ pathname==='/' ? `${styles.active}`: "" }><a href="/">Home</a></li>
-                <li className={ pathname==='/About-us' ? `${styles.active}`: "" }><a href="/About-us">About Us</a></li>
-                <li className={ pathname==='/services' ? `${styles.active}`: "" }><a href="/services">Services</a></li>
-                <li className={ pathname==='/projects' ? `${styles.active}`: "" }><a href="/projects">Projects</a></li>
-                <li className={ pathname==='/contact' ? `${styles.active}`: "" }><a href="/contact">Contact us</a></li>
-            </ul> 
-            <div className="btn">
-                GMT Academy <MoveRight size={20} />
-            </div>  
-        </div>
-    )
-}
-export default Navbar */
-
 
 'use client';
 
@@ -122,9 +98,9 @@ export default function Navbar() {
       </ul>
 
       {/* Preserve the original academy label. Add a link when its destination is known. */}
-      <div className={`${styles.academy} btn`}>
+      <a href='https://academy.gmtdevs.com/' target='__blank' className={`${styles.academy} btn`}>
         GMT Academy <MoveRight size={20} aria-hidden="true" />
-      </div>
+      </a>
 
       <button
         ref={toggleRef}
@@ -178,9 +154,9 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <div className={styles.mobileAcademy}>
+            <a href='https://academy.gmtdevs.com/' target='__blank' className={styles.mobileAcademy}>
               GMT Academy <MoveRight size={20} aria-hidden="true" />
-            </div>
+            </a>
           </div>
         </div>,
         document.body
