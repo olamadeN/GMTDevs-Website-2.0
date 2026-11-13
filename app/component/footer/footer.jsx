@@ -19,11 +19,11 @@ const Footer = () => {
                     <div className={styles.item2}>
                         <p className={styles.itemHeader}>QUICK LINKS</p>
                         <ul className={`${styles.itemContacts} ${styles.item2Contacts}`}>
-                            <li>About us</li>
-                            <li>Our services</li>
-                            <li>Explore projects</li>
-                            <li>GMT Academy</li>
-                            <li>Contact us</li>
+                           <Link href="/About-us"><li>About us</li></Link> 
+                           <Link href="/services"><li>Our services</li></Link>
+                           <Link href="/projects"><li>Explore projects</li></Link>
+                           <a href="https://academy.gmtdevs.com"><li>GMT Academy</li></a>
+                           <Link href="contact"><li>Contact us</li></Link>                            
                         </ul>
                     </div>
                     <div className={styles.item3}>
