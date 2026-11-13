@@ -1,6 +1,7 @@
 import { ArrowRight, Facebook, LucideInstagram, Mail, MapPinned, Phone } from 'lucide-react';
 import styles from './footer.module.css';
 import Image from "next/image";
+import Link from 'next/link';
 
 const Footer = () => {
     return ( 
