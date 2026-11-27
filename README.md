@@ -13,7 +13,6 @@ solutions built around business goals.
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-[Visit Live Website](https://www.gmtdevs.com)
 
 </div>
 
