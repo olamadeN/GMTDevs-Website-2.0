@@ -26,8 +26,8 @@ export default function RootLayout({ children }) {
             <div className='container headerContent'>                
                 <div className='headerTxt'>
                     <SlideUp delay={0.2} duration={0.8} distance={30}> 
-                        <h1> Explore our {/* recent */} <span style={{color: 'var(--text-secondary)'}}>projects</span>.</h1>
-                        <p>A selection of {/* websites, applications, platforms and */} digital experiences we've designed and developed for businesses and organizations.</p>
+                        <h1> Explore our <span style={{color: 'var(--text-secondary)'}}>projects</span>.</h1>
+                        <p>Explore websites and digital solutions we've developed to support businesses and their objectives.</p>
                     </SlideUp>
                 </div>
                 <div className='globeWrapper'>

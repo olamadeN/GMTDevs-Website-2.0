@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className={styles.footer2Inner}>
                     <div className={styles.item1}>
                         <Image className={styles.footer1Logo} width={165} height={59} src="/images/logo.png" alt="logo" />
-                        <p>We specialize in creating smart, clean, and effective web solutions tailored to meet the unique needs of businesses and personal brands helping business owners establish a powerful online presence that communicates their value and drives growth.</p>
+                        <p>GMTDevs is a web design and development company in Lagos, Nigeria. We create custom websites, web applications and digital solutions that help businesses attract customers, improve operations and achieve their business goals.</p>
                         <div className={styles.itemContacts}>
                             <li><Phone size={19} style={{color:"#CB8731"}} className='icon'/> +234 701 192 7970</li>
                             <li><Mail size={19} style={{color:"#CB8731"}} className='icon'/> contact@gmtdevs.com</li>

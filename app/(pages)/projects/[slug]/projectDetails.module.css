@@ -30,6 +30,7 @@
 }
 .double p{
     align-self: center;
+    white-space: pre-line;
 }
 .double img{
     width: 100%;

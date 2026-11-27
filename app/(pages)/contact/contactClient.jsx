@@ -74,7 +74,7 @@ const ContactClient = () => {
                 <div className="container">
                     <div className={styles.double}>
                         <div className={styles.left}>
-                            <h2>Let’s talk about what you’re building</h2>
+                            <h2>Let's talk about your business goals</h2>
                             <form onSubmit={handleSubmit}>
                                 <label className={styles.visuallyHidden} htmlFor="contact-name">Your name</label>
                                 <input id="contact-name" type="text" placeholder="Your name" name="yourName" autoComplete="name" maxLength={120} required />

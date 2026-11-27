@@ -48,7 +48,7 @@ const About = () => {
             
                             <div className={`${styles.aboutCard1} ${styles.card}`}>                                    
                                 <p>Business</p>
-                                <p>We understand the objectives behind the product and the people it needs to serve.</p>
+                                <p>We understand your business goals, customer needs and the value your digital solution should deliver.</p>
                             </div>                    
     
                             <div className={`${styles.aboutCard2} ${styles.card}`}>
@@ -58,7 +58,7 @@ const About = () => {
     
                             <div className={`${styles.aboutCard3} ${styles.card}`}>
                                 <p>Development</p>
-                                <p>We build reliable digital products that can support real users and real growth. The result are solutions that aren’t only functional, but actually works.</p>
+                                <p>We build reliable digital products that solve real business problems, improve operations and support sustainable growth.</p>
                             </div>                           
                             
                         </div>
@@ -78,7 +78,7 @@ const About = () => {
                             </div>
                             <div className={styles.cardContent}>
                                 <h4>Understand</h4>
-                                <p>We begin by listening. Getting to know your brand, your audience, and what success looks like for you.</p>
+                                <p>	We begin by listening, understanding your business, your customers and what you want to achieve.</p>
                             </div>
                         </div>
                         <div className={styles.getThingsCard}>
@@ -87,7 +87,7 @@ const About = () => {
                             </div>
                             <div className={styles.cardContent}>
                                 <h4>Plan</h4>
-                                <p>Next, we define the website’s structure, features, & timeline, ensuring clear goals aligned with your specific needs</p>
+                                <p>	We recommend the right solution, defining features, priorities and timelines around your business goals.</p>
                             </div>
                         </div>
                         <div className={styles.getThingsCard}>
@@ -96,7 +96,7 @@ const About = () => {
                             </div>
                             <div className={styles.cardContent}>
                                 <h4>Create</h4>
-                                <p>We craft a seamless digital experience from design to development, ensuring cross platform responsiveness.</p>
+                                <p>	We design and develop responsive, user-friendly digital solutions that meet your business and customer needs.</p>
                             </div>
                         </div>
                         <div className={styles.getThingsCard}>
@@ -105,7 +105,7 @@ const About = () => {
                             </div>
                             <div className={styles.cardContent}>
                                 <h4>Support</h4>
-                                <p>Post-launch, we support {/* your website */} with refinements, updates, hosting and maintenance ensuring it grows alongside your business.</p>
+                                <p>	After launch, we provide hosting, maintenance and ongoing improvements to keep your solution valuable to your business.</p>
                             </div>
                         </div>
                     </div>

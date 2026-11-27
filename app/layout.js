@@ -10,13 +10,13 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "GMTDevs Global - Web Design & Development",
+  title: "GMTDevs Global - Web Design & Development in Nigeria",
   description: "GMTDevs Global delivers custom website design, web development, web applications, and digital solutions that help businesses and brands grow.",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "GMTDevs Global",
-    title: "GMTDevs Global - Web Design & Development",
+    title: "GMTDevs Global - Web Design & Development in Nigeria",
     description:
       "Custom websites, web applications, and digital solutions built to help businesses and brands grow.",
     url: "/",

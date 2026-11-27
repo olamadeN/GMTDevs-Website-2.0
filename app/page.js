@@ -26,7 +26,8 @@ export default function Home() {
         </div>
         <div className={styles.heroContent}>
           <motion.h1 {...entrance(0.05, 14)} className={styles.heroTitle}> Custom Websites, Web Apps and <span style={{color:'#CB8731'}}> Digital Solutions</span> for Growing Businesses</motion.h1>
-          <motion.p {...entrance(0.16, 14)}>Your business is unique. Your software should be too. We design and develop bespoke websites, web applications, e-commerce platforms and digital solutions that simplify daily operations and support business growth.</motion.p>
+          <motion.p {...entrance(0.16, 14)}>We understand your business before we build. We design and develop custom websites, web applications, e-commerce platforms and digital solutions that help you attract customers, simplify operations and grow.</motion.p>
+{/*           <motion.p {...entrance(0.16, 14)}>Your business is unique. Your software should be too. We design and develop bespoke websites, web applications, e-commerce platforms and digital solutions that simplify daily operations and support business growth.</motion.p> */}
           <motion.div {...entrance(0.26, 12)} className={styles.btnPack}>
             <Link href="/contact" className='btnPills'>Get in touch with us</Link>
             <Link href="/projects" className='btn'>Explore projects <MoveRight size={20} /></Link>
@@ -49,10 +50,11 @@ export default function Home() {
             </motion.div>
             <div className={styles.right}>
               <motion.div {...entrance(0.08, 18)} className={styles.right1}>
-                <p>At GMTDevs, we create clean, effective websites and digital solutions tailored to businesses and personal brands. Our designs focus on functionality, user experience, and your unique goals, making sure your website is not just beautiful but also working.
+                {/* <p>At GMTDevs, we create clean, effective websites and digital solutions tailored to businesses and personal brands. Our designs focus on functionality, user experience, and your unique goals, making sure your website is not just beautiful but also working.
                   We are not just developers; we are your partners in taking your brand online
                   and helping you thrive in the digital world.
-                </p>
+                </p> */}
+                <p>At GMTDevs, we design and develop websites and digital solutions that help businesses attract customers, build credibility and improve their operations. We take the time to understand your business, your audience and your goals before recommending a solution. Our focus is on creating digital experiences that deliver real value to your business and customers.</p>
                 <Link href="/About-us" className='btn'>Learn more <MoveRight size={20} /></Link>
               </motion.div>
               <div className={styles.right2}>
@@ -70,7 +72,7 @@ export default function Home() {
                 <img src="/images/designService.png" alt="Design Service" />
                 <h4>Design services</h4>
                 <p>
-                  We design and develop powerful, scalable applications tailored to your business needs. Our solutions are readily and directly built for security, functionality, performance and reliability, helping your business turn novel ideas into dependable digital products. 
+                  We create professional website designs and intuitive digital experiences that help businesses communicate their value, engage customers and build trust. Our designs make it easier for your audience to understand your offerings and take the next step.
                 </p>
                 <br />
                 <Link href="/services#design" className='btn'>Learn more <MoveRight size={20} /></Link>

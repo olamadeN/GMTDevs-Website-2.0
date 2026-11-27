@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GMTDevs Global
+
+Official website of GMTDevs Global, a technology company
+building custom websites, web applications and digital
+solutions that support business growth.
+
+## Overview
+
+The website communicates our services, showcases completed
+projects and connects businesses with digital solutions
+tailored to their needs.
+
+It is built with a focus on responsive design, usability,
+performance and search engine visibility.
+<div align="center">
+
+<img src="./docs/logo.png" alt="GMTDevs Global" width="220" />
+
+# GMTDevs Global
+
+Official website of GMTDevs Global, delivering digital
+solutions built around business goals.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+
+[Visit Live Website](https://www.gmtdevs.com)
+
+</div>
+
+---
+
+![GMTDevs website preview](./docs/website-preview.png)
+
+## Overview
+
+GMTDevs Global develops custom websites, web applications
+and digital solutions that help businesses attract customers,
+improve operations and achieve their business goals.
+
+This repository contains the source code for our official website.
+
+## Key Features
+
+- Responsive design across devices
+- Services and project portfolio
+- Client testimonials
+- Contact and enquiry system
+- Search engine optimisation
+- GMTDevs Academy integration
+
+## Technology Stack
+
+- React
+- JavaScript
+- CSS
+- Framer Motion
+- Vercel
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Developed By
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+[GMTDevs Global](https://www.gmtdevs.com)
+## Live Website
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[www.gmtdevs.com](https://www.gmtdevs.com)
 
-## Learn More
+## Key Features
 
-To learn more about Next.js, take a look at the following resources:
+- Responsive website design
+- Service presentation
+- Project portfolio
+- Client testimonials
+- Contact and enquiry system
+- Search engine optimisation
+- GMTDevs Academy integration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- React
+- JavaScript
+- CSS
+- Framer Motion
+- Vercel
 
-## Deploy on Vercel
+## Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Install the project dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Developed By
+
+[GMTDevs Global](https://www.gmtdevs.com)

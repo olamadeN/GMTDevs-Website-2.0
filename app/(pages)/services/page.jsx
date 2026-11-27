@@ -64,8 +64,8 @@ const Services = () => {
                     <SlideInLeft delay={0.2} distance={30} duration={0.8}>
                         <div className={`${styles.doubleSection} ${styles.sectionImgRight}`}>
                             <div className={styles.sectionTxtPack}>
-                                <h3>Website Design</h3>
-                                <p>We turn product ideas into clear, structured and usable digital experiences. We explore the users, features, journeys and interactions that make a product valuable before shaping them into a complete interface. Whether you are starting with an early concept or refining an existing product, we help create an experience that makes sense from the first interaction to the last.</p>
+                                <h3>Website & Product Redesign</h3>
+                                <p>When an existing website or digital product is difficult to use, giving it a new look may not solve the problem. We identify usability issues, confusing workflows and missed opportunities, then redesign the experience to better serve your customers and business objectives without losing what already works.</p>
                             </div>  
                             <div className={styles.sectionImgPack}>
                                 <img src="/images/webDesign.png" alt="man holding a laptop" />
@@ -100,7 +100,7 @@ const Services = () => {
                         <div className={`${Styles.right} ${styles.right}`}>
                             <div className={Styles.right1}>
                                 <h3>Development services</h3>
-                                <p>A beautiful interface is only the beginning. Our development team turns concepts and designs into reliable digital products that work across devices, users and real-world business situations.</p>
+                                <p>A beautiful interface is only the beginning. Our web development team creates reliable digital solutions that work across devices, meet customer needs and support business growth.</p>
                             </div>
                             <div className={Styles.right2}>
                                 <img src='/images/plane.png'/>
@@ -112,8 +112,8 @@ const Services = () => {
                     <SlideInLeft delay={0.2} distance={30} duration={0.8}>
                         <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
                             <div className={styles.sectionTxtPack}>
-                                <h3>Website Development</h3>
-                                <p>We develop web applications that allow businesses and their customers to do more online. Whether you need a customer portal, dashboard, booking platform or custom application, we build the functionality around the workflows that matter most. Every component is developed with usability, reliability and the realities of everyday use in mind</p>
+                                <h3>Website & Web App Development</h3>
+                                <p>We develop custom websites, e-commerce platforms and web applications that help businesses reach customers and operate more efficiently. Whether you need a business website, online store, customer portal or booking platform, we build reliable, responsive solutions around your business goals and everyday needs.</p>
                             </div>  
                             <div className={styles.sectionImgPack}>
                                 <img src="/images/webDev.png" alt="man holding a laptop" />
@@ -123,8 +123,8 @@ const Services = () => {
                     <SlideInRight delay={0.2} distance={30} duration={0.8}>
                         <div className={`${styles.doubleSection} ${styles.sectionImgRight}`}>
                             <div className={styles.sectionTxtPack}>
-                                <h3>SaaS, Business CMS Platforms</h3>
-                                <p>We build custom digital platforms that help businesses bring important processes, information and operations into one place. Instead of relying on disconnected tools and repetitive manual processes, your team gets a system designed around how your organization actually works. </p>
+                                <h3>SaaS & Business Platforms</h3>
+                                <p>We develop custom software, SaaS platforms and content management systems that help businesses manage information, automate processes and streamline operations. Instead of relying on disconnected tools and repetitive manual tasks, your team gets a solution designed around how your business works.</p>
                             </div>  
                             <div className={styles.sectionImgPack}>
                                 <img src="/images/SaaS.png" alt="man holding a laptop" />
@@ -134,8 +134,8 @@ const Services = () => {
                     <SlideInLeft delay={0.2} distance={30} duration={0.8}>
                         <div className={`${styles.doubleSection} ${styles.sectionImgLeft}`}>
                             <div className={styles.sectionTxtPack}>
-                                <h3>Post-Launch Support</h3>
-                                <p>Launching a digital product is only the beginning. We provide ongoing technical support, improvements, updates and feature development to keep your website or application working as your needs change. Whether you need to fix issues, improve performance or introduce new capabilities, we help your product remain useful and dependable over time.</p>
+                                <h3>Maintenance & Support</h3>
+                                <p>Launching a digital product is only the beginning. We provide website maintenance, technical support, updates and ongoing improvements to keep your solution working as your needs change. Whether you need to fix issues, improve performance or introduce new features, we help your digital product remain useful and dependable over time.</p>
                             </div>  
                             <div className={styles.sectionImgPack}>
                                 <img src="/images/support.png" alt="man holding a laptop" />
