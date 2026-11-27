@@ -1,20 +1,6 @@
-# GMTDevs Global
-
-Official website of GMTDevs Global, a technology company
-building custom websites, web applications and digital
-solutions that support business growth.
-
-## Overview
-
-The website communicates our services, showcases completed
-projects and connects businesses with digital solutions
-tailored to their needs.
-
-It is built with a focus on responsive design, usability,
-performance and search engine visibility.
 <div align="center">
 
-<img src="./docs/logo.png" alt="GMTDevs Global" width="220" />
+<img src="./doc/logo.png" alt="GMTDevs Global" width="220" />
 
 # GMTDevs Global
 
@@ -33,7 +19,7 @@ solutions built around business goals.
 
 ---
 
-![GMTDevs website preview](./docs/website-preview.png)
+![GMTDevs website preview](./doc/website-preview.png)
 
 ## Overview
 
@@ -63,45 +49,6 @@ This repository contains the source code for our official website.
 ## Getting Started
 
 Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-## Developed By
-
-[GMTDevs Global](https://www.gmtdevs.com)
-## Live Website
-
-[www.gmtdevs.com](https://www.gmtdevs.com)
-
-## Key Features
-
-- Responsive website design
-- Service presentation
-- Project portfolio
-- Client testimonials
-- Contact and enquiry system
-- Search engine optimisation
-- GMTDevs Academy integration
-
-## Technology Stack
-
-- React
-- JavaScript
-- CSS
-- Framer Motion
-- Vercel
-
-## Getting Started
-
-Install the project dependencies:
 
 ```bash
 npm install
